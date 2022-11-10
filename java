@@ -1,18 +1,13 @@
-import java.util.Scanner;
-
-public class HelloWorld {
+public class VowelConsonant {
 
     public static void main(String[] args) {
 
-        // Creates a reader instance which takes
-        // input from standard input - keyboard
-        Scanner reader = new Scanner(System.in);
-        System.out.print("Enter a number: ");
+        char ch = 'i';
 
-        // nextInt() reads the next integer from the keyboard
-        int number = reader.nextInt();
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
+            System.out.println(ch + " is vowel");
+        else
+            System.out.println(ch + " is consonant");
 
-        // println() prints the following line to the output screen
-        System.out.println("You entered: " + number);
     }
 }
